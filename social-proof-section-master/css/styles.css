@@ -1,0 +1,173 @@
+:root{
+
+    --magentafuerte:hsl(300, 43%, 22%);
+    --rosaclaro: hsl(333, 80%, 67%);
+    --tipo: hsl(303, 10%, 53%);
+    --fondo:hsl(300, 24%, 96%);
+    --blanco:hsl(0, 0%, 100%);
+
+    --typo:'League Spartan', sans-serif;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: var(--typo);
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--blancos);
+}
+
+header{
+    margin: 6rem 5rem 0 5rem;
+    color: var(--magentafuerte);
+}
+
+.info{
+    color: var(--tipo);
+    font-weight: 500;
+    margin: 0 4rem 0 4rem;
+    line-height: 2rem;
+}
+
+.estrellas{
+    color: var(--magentafuerte);
+    font-weight: bold;
+}
+.estrellas__texto{
+    background-color: var(--fondo);
+    padding: 2rem 0 .3rem 0;
+    margin: 2rem 0 2rem 0;
+    border-radius: .5rem;
+}
+.estrellas__texto:last-of-type{
+    margin-bottom: 5rem;
+}
+.coments{
+    background-color: var(--magentafuerte);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: var(--blanco);
+    text-align: left;
+}
+.coments_nombre{
+    font-weight: 700;
+    margin-bottom: -1rem;
+}
+.coments_leyenda{
+    font-weight: 500;
+    color: var(--rosaclaro);
+}
+.coments_comentario{
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin: 2rem 0 2rem 0;
+}
+.coments:last-of-type{
+    margin-bottom: 10rem;
+}
+.imagen{
+    border-radius: 50%;
+    max-width: 80%;
+    
+    
+}
+
+.coments_grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+@media(min-width:750px){
+
+    .contenedor{
+        margin: auto;
+        max-width: 105rem;
+        margin-top: 15rem;
+    }
+    .division_uno{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    }
+     
+    h1{
+        font-size: 5rem;
+        
+    }
+    .header{
+        margin:0 10rem 0 0;
+    }
+    header{
+        margin :-5rem 0 0 0 ;
+    }
+    .info{
+        margin-left: 0;
+    
+    }
+
+    .estrellas__texto{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: .5rem 0 .5rem 2rem;
+    
+    }
+    svg{
+        margin-right: .5rem;
+    }
+    .estrellas_estrellas{
+        margin: 0 2rem 0 0 ;
+    }
+    .uno{
+        margin:0 8rem 1.5rem 3.5rem;
+
+    }
+    .dos{
+        margin:0 4rem 1.5rem 8rem;
+
+    }
+    .tres{
+        margin:0 0 1.5rem 13rem;
+        
+
+    }
+    .coments{
+        margin: 0 0 0 0;
+    }
+    .division_dos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    .coments:last-of-type{
+        margin-bottom: 0rem;
+    }
+    .coments_uno{
+        margin: -4rem 0 4rem 0;
+    }
+    .coments_dos{
+        margin: -1.5rem 0 2rem 0;
+    }
+   
+    
+
+    }
+    
+    
+          
